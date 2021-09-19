@@ -1,0 +1,20 @@
+services:
+  web:
+    image: "php:8.0.9-cli"
+    build:
+      context: .
+      dockerfile: web.Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app:/usr/src/app
+      - ./php.ini:/usr/local/etc/php/php.ini
+  clamav:
+    image: "debian:buster-slim"
+    build:
+      context: .
+      dockerfile: clamav.Dockerfile
+    ports:
+      - "3310:3310"
+    volumes:
+      - ./clamd.conf:/etc/clamav/clamd.conf

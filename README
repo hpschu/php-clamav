@@ -1,0 +1,4 @@
+# Clamav scanning utility with json API for instream scanning.
+
+This utility is meant to be used for simple stream malware scanning.
+Check the SocketTest.php for an example how the stream scanning can be used.
