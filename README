@@ -2,3 +2,4 @@
 
 This utility is meant to be used for simple stream malware scanning.
 Check the SocketTest.php for an example how the stream scanning can be used.
+WARNING: This utility is in a proof-of-cocept level and should not be used in any production setting.
